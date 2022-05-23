@@ -1,15 +1,26 @@
 {
-  "name": "NASA Picture of the day viewer",
-  "version": "0.0.0.1",
+  "name": "Flower Power: A Helpful Tracker",
+  "version": "1.0.0.0",
   "manifest_version": 2,
-  "description": "A chromium extension to show NASA's Picture of the Day.",
+  "description": "An extension to display State's Government Flower Amount to help shopping.",
   "icons": {
-    "16": "icons/nasapod16x16.png",
-    "32": "icons/nasapod32x32.png",
-    "48": "icons/nasapod48x48.png",
-    "128": "icons/nasapod128x128.png"
+    "16": "icons/fp16x16.png",
+    "32": "icons/fp32x32.png",
+    "48": "icons/fp48x48.png",
+    "128": "icons/fp128x128.png"
   },
   "browser_action": {
     "default_popup": "popup/popup.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["lib/jquery.min.js","content-scripts/content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "images/*.jpeg"
+  ]
 }
