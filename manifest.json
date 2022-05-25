@@ -1,6 +1,6 @@
 {
   "name": "Flower Power: A Helpful Tracker",
-  "version": "1.0.0.0",
+  "version": "1.1.1.0",
   "manifest_version": 2,
   "description": "An extension to display State's Government Flower Amount to help shopping.",
   "icons": {
@@ -10,7 +10,7 @@
     "128": "icons/fp128x128.png"
   },
   "browser_action": {
-    "default_popup": "popup/popup.html"
+    "default_popup": "flower-power-extension/dist/flower-power-extension/index.html"
   },
   "content_scripts": [
     {

@@ -1,4 +1,3 @@
-import { doc, getDoc } from "firebase/firestore";
 
 const sendMessageId = document.getElementById("updateAmount");
 if (sendMessageId) {
